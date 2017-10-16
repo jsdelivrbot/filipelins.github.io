@@ -1,0 +1,108 @@
+<!DOCTYPE>
+<html lang="pt" ng-app="app">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <!-- bower:css -->
+      <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>
+      <!-- endbower -->
+      <link rel="stylesheet" href="style.css" />
+
+      <!-- bower:js-->
+      <script src="../bower_components/angular/angular.js"></script>
+      <script src="../bower_components/jquery/dist/jquery.js"></script>
+      <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+      <script src="../bower_components/angular-route/angular-route.js"></script>
+      <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="../bower_components/angular-resource/angular-resource.js"></script>
+      <!-- endbower -->
+
+      <!-- Controllers  controllers/-->
+     <script src="js/controllers/CoreCtrl.js"></script>
+     <script src="js/controllers/test/TestCtrl.js"></script>
+
+     <!-- Services -->
+     <script src="js/services/teste/Test.js"></script>
+
+      <script src="js/app.js"></script>
+
+      <style>
+        #header-fixed {
+          background: #000;
+          margin-bottom: 0;
+        }
+
+        .header-font-size {
+          color: #fff !important;
+          font-size: 14px;
+        }
+
+        .menu{
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+
+        #brand {
+          height: 71px;
+          border: solid 1px;
+          margin-top: -7px;
+           margin-left: -3px !important;
+          border: solid 1px;
+        }
+
+        .slider {
+          height: 550px;
+          margin-top: -150px;
+          background: silver;
+          margin-bottom: 0;
+        }
+
+        .search-bar {
+          background-color: #807777;
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+
+          #brand {
+            height: 30px;
+            border: none;
+            margin: 0;
+          }
+
+          .menu {
+            padding: 0px;
+          }
+
+          #navbar {
+            margin: 0;
+          }
+
+          .slider {
+            display: none;
+          }
+        }
+
+      </style>
+  </head>
+  <body>
+
+    <nav id="header-fixed" class="navbar navbar-default" ng-include="'views/generics/hearder-informations.html'"></nav>
+    <nav class="navbar navbar-default" ng-include="'views/generics/navbar.html'" id="navbar"></nav>
+    <article class="jumbotron text-center slider" ng-include="'views/generics/slide.html'"></article>
+    <article class="jumbotron text-center search-bar" ng-include="'views/generics/search.html'"></article>
+    <article class="container" ng-include="'views/generics/details.html'"></article>
+
+
+    <!-- <article class="container-fluid" id="main-slide">
+      <section ng-include="'views/generics/slide-header.html'" ></section>
+    </article> -->
+
+
+
+
+
+  </body>
+</html>
