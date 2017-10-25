@@ -1,0 +1,20 @@
+<section class="container" ng-controller="HighlightedCtrl as controller">
+  <div class="col-xs-12">
+    <button class="tab-button col-xs-6" ng-class="{'active': tab == 0}" ng-click="tab = 0;" ng-model="tab">Lançamentos</button>
+    <button class="tab-button col-xs-6" ng-class="{'active': tab == 1}" ng-click="tab = 1;" ng-model="tab">Em Construção</button>
+  </div>
+
+  <div class="col-xs-12">
+    <div ng-show="tab == 0">
+      <div class="col-lg-4 col-sm-12" ng-repeat="item in itens">
+        <img src="{{item.img}}" class="img-responsive">
+        <button class="btn col-xs-12"> Mais detalhes</button>
+        <br /><br />
+      </div>
+    </div>
+    <div ng-show="tab == 1">
+      Não há imóveis em contrução.
+    </div>
+  </div>
+
+</section>

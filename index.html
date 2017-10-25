@@ -1,1 +1,44 @@
-Hello World
+<!DOCTYPE HTML>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Apartamentos Manaus</title>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="vendor/flickity/flickity.min.css" />
+  </head>
+  <body>
+    <!-- <div ng-view> -->
+    <div class="container-fluid">
+     <header class="row" ng-include="'views/generic/topo.html'"></header>
+     <div class="row" ng-include="'views/generic/menu.html'"></div>
+     <div id="search-bar" class="row" ng-include="'views/generic/search-bar.html'"></div>
+     <div class="row" ng-view></div>
+     <footer class="row">footer</footer>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/flickity/flickity.pkgd.min.js"></script>
+    <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="vendor/angular-cookies/angular-cookies.js"></script>
+    <script src="vendor/angular-resource/angular-resource.js"></script>
+
+
+    <script src="js/controllers/CoreCtrl.js"></script>
+    <script src="js/controllers/generic/MenuCtrl.js"></script>
+    <script src="js/controllers/home/HighlightedCtrl.js"></script>
+
+    <script src="js/app.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
