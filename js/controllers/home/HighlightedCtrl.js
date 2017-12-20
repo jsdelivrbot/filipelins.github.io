@@ -1,19 +1,8 @@
 function HighlightedCtrl(){
   CoreCtrl.apply(this, arguments);
   this.$scope.tab = 0;
-  // this.addCarosel();
-  this.$scope.itens = [
-    {
-      id:'1',
-      img:'http://via.placeholder.com/337x400'
-    },{
-      id:'1',
-      img:'http://via.placeholder.com/337x400'
-    },{
-      id:'1',
-      img:'http://via.placeholder.com/337x400'
-    }
-  ]
+  this.service = this.inject('Highlighted');
+  this.$scope.itens = this.service;
 }
 
 $.extend(HighlightedCtrl.prototype, CoreCtrl.prototype );

@@ -8,18 +8,15 @@ function MenuCtrl (){
       target:'/'
     },{
       label:'A Empresa',
-      target:'/'
+      target:'#!/about'
     },{
       label:'Venda',
-      target:'/'
+      target:'#!/sold'
     },{
       label:'Locação',
-      target:'/'
+      target:'#!/rent'
     },{
       label:'Cadastro de Imóveis',
-      target:'/'
-    },{
-      label:'Financiamento',
       target:'/'
     },{
       label:'Fale Conosco',

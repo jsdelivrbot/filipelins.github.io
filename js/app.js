@@ -9,6 +9,10 @@ app.config([
     function ($routeProvider, $httpProvider) {
         $routeProvider
             .when('/', { templateUrl: 'views/home/home.html' })
+            .when('/rent', { templateUrl: 'views/pages/rent.html' })
+            .when('/sold', { templateUrl: 'views/pages/sold.html' })
+            .when('/about', { templateUrl: 'views/pages/about-us.html' })
+
 
             .otherwise({
             	redirectTo: function() {
@@ -21,8 +25,12 @@ app.config([
 //-- Controllers
 app.controller('MenuCtrl',['$injector', '$scope', MenuCtrl]);
 app.controller('HighlightedCtrl',['$injector', '$scope', HighlightedCtrl]);
+app.controller('RentCtrl',['$injector', '$scope', RentCtrl]);
+app.controller('SoldCtrl',['$injector', '$scope', SoldCtrl]);
 
 
 
 //-- Services
-// app.service('Test', Test);
+app.service('Rent', Rent);
+app.service('Sold', Sold);
+app.service('Highlighted', Highlighted);

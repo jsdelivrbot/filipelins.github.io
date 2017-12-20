@@ -4,12 +4,12 @@
     <button class="tab-button col-xs-6" ng-class="{'active': tab == 1}" ng-click="tab = 1;" ng-model="tab">Em Construção</button>
   </div>
 
-  <div class="col-xs-12">
-    <div ng-show="tab == 0">
-      <div class="col-lg-4 col-sm-12" ng-repeat="item in itens">
-        <img src="{{item.img}}" class="img-responsive">
-        <button class="btn col-xs-12"> Mais detalhes</button>
-        <br /><br />
+  <div class="container">
+    <div ng-show="tab == 0" class="row">
+      <div class="panel panel-default col-xs-12 col-sm-6 col-md-4" style="background:none;box-shadow:none;border:none;" ng-repeat="item in itens">
+        <div class="image-liquid " style="background-image: url('https://img.tecnisa.com.br/images/imoveis/77/Ilustracao/10_fm.jpg')">
+        </div>
+        <button class="btn col-xs-12 bt-hight"> Mais detalhes</button>
       </div>
     </div>
     <div ng-show="tab == 1">
